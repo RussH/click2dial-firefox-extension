@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://asterisk-ext/skin/asterisk-ext.css" type="text/css"?>
+
+<!DOCTYPE prefwindow [ 
+<!ENTITY % asteriskextDTD SYSTEM "chrome://asterisk-ext/locale/asterisk-ext.dtd"> 
+%asteriskextDTD; 
+]>
+
+<overlay id="asteriskExt-Overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+	<script type="application/x-javascript" src="chrome://asterisk-ext/content/overlayTBAddressBook.js" />
+
+ 	<stringbundleset id="stringbundleset"> 
+		<stringbundle id="asterisk-ext-strings" src="chrome://asterisk-ext/locale/asterisk-ext.properties" />
+	</stringbundleset>
+
+	<description id="cvPhWork" class="CardViewText asterisk-ext-number"
+		onclick="AsteriskExtChrome.BrowserOverlay.editConfirmDial(AsteriskExt.cleanPhoneNumber(document.getElementById('cvPhWork').textContent));" />
+	<description id="cvPhHome" class="CardViewText asterisk-ext-number"
+		onclick="AsteriskExtChrome.BrowserOverlay.editConfirmDial(AsteriskExt.cleanPhoneNumber(document.getElementById('cvPhHome').textContent));" />
+	<description id="cvPhFax" class="CardViewText asterisk-ext-number"
+		onclick="AsteriskExtChrome.BrowserOverlay.editConfirmDial(AsteriskExt.cleanPhoneNumber(document.getElementById('cvPhFax').textContent));" />
+	<description id="cvPhCellular" class="CardViewText asterisk-ext-number"
+		onclick="AsteriskExtChrome.BrowserOverlay.editConfirmDial(AsteriskExt.cleanPhoneNumber(document.getElementById('cvPhCellular').textContent));" />
+	<description id="cvPhPager" class="CardViewText asterisk-ext-number"
+		onclick="AsteriskExtChrome.BrowserOverlay.editConfirmDial(AsteriskExt.cleanPhoneNumber(document.getElementById('cvPhPager').textContent));" />
+
+</overlay>

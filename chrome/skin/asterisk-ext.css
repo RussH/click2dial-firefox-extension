@@ -1,0 +1,95 @@
+
+#AsteriskExtPreferences radio[pane] {
+  list-style-image: url("chrome://browser/skin/preferences/Options.png"); 
+}
+
+radio[pane=paneGeneral] {
+  -moz-image-region: rect(0px, 32px,  32px, 0px)
+}
+
+radio[pane=tt] {
+  -moz-image-region: rect(0px, 64px, 32px, 32px)
+}
+
+radio[pane=paneDisplay] {
+  -moz-image-region: rect(0px, 96px,  32px, 64px)
+}
+
+radio[pane=paneCall] {
+  -moz-image-region: rect(0px, 128px,  32px, 96px)
+}
+
+radio[pane=panePrivacy] {
+  -moz-image-region: rect(0px, 160px,  32px, 128px)
+}
+
+radio[pane=paneSecurity] {
+  -moz-image-region: rect(0px, 192px,  32px, 160px)
+}
+
+radio[pane=paneConnection] {
+  -moz-image-region: rect(0px, 224px, 32px, 192px)
+}
+
+#asterisk-ext-toolbar-textbox-item {
+	height: 20px;
+}
+
+#asterisk-ext-status-textbox .textbox-search-icon {
+	list-style-image: url("chrome://asterisk-ext/skin/logo-16.png"); 
+	-moz-image-region: rect(0px, 16px,  16px, 0px);
+}
+
+#asterisk-ext-toolbar-textbox .textbox-search-icon {
+	list-style-image: url("chrome://asterisk-ext/skin/logo-16.png"); 
+	-moz-image-region: rect(0px, 16px,  16px, 0px);
+}
+
+#asterisk-ext-status-icon {
+	list-style-image: url("chrome://asterisk-ext/skin/logo-16.png"); 	
+}
+
+#asterisk-ext-status-icon[class=ok] {
+	list-style-image: url("chrome://asterisk-ext/skin/logo-ok-16.png"); 	
+}
+
+#asterisk-ext-status-icon[class=nok] {
+	list-style-image: url("chrome://asterisk-ext/skin/logo-nok-16.png"); 	
+}
+
+#asterisk-ext-toolbar-icon {
+	list-style-image: url("chrome://asterisk-ext/skin/logo-24.png"); 	
+}
+
+#wrapper-asterisk-ext-toolbar-icon {
+	list-style-image: url("chrome://asterisk-ext/skin/logo-24.png"); 	
+}
+
+#asterisk-ext-toolbar-icon[class=ok] {
+	list-style-image: url("chrome://asterisk-ext/skin/logo-ok-24.png"); 	
+}
+
+#asterisk-ext-toolbar-icon[class=nok] {
+	list-style-image: url("chrome://asterisk-ext/skin/logo-nok-24.png"); 	
+}
+
+[iconsize="small"] #asterisk-ext-toolbar-icon {
+	list-style-image: url("chrome://asterisk-ext/skin/logo-16.png"); 	
+}
+
+[iconsize="small"] #asterisk-ext-toolbar-icon[class=ok] {
+	list-style-image: url("chrome://asterisk-ext/skin/logo-ok-16.png"); 	
+}
+
+[iconsize="small"] #asterisk-ext-toolbar-icon[class=nok] {
+	list-style-image: url("chrome://asterisk-ext/skin/logo-nok-16.png"); 	
+}
+
+.asterisk-ext-number {
+	background-color: #ffe;
+}
+.asterisk-ext-number:hover {
+	cursor: pointer;
+	color: #f90;
+}
+

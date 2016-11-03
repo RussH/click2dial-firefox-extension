@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://asterisk-ext/skin/about.css" type="text/css"?>
+<!DOCTYPE dialog SYSTEM "chrome://asterisk-ext/locale/asterisk-ext.dtd">
+<dialog title="About Asterisk Click2Dial" chromehidden="menubar toolbar location directories status extrachrome"
+	id="genericAbout" buttons="accept" onload="about_onload()"
+	xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<script src="chrome://asterisk-ext/content/about.js"/>
+	<stringbundle id="asterisk-ext-strings" src="chrome://asterisk-ext/locale/asterisk-ext.properties" />
+	
+
+	<vbox class="aboutbox">
+		<description style="text-align: center">&about.description;</description>
+		<spacer flex="1"/>
+		<label id="version"/>
+		<label value="HomePage" class="text-link"
+			onclick="window.opener.openURL('http://www.acipia.fr/community/asterisk/asterisk-click2dial-firefox-extension/')" />
+	</vbox>
+
+	<vbox class="aboutbox">
+		<description style="text-align: center">&about.acipia;</description>
+		<image src="chrome://asterisk-ext/skin/acipia.png" id="acipia-logo" class="text-link" 
+			tooltiptext="Acipia Home Page" onclick="window.opener.openURL('http://www.acipia.fr')"/>
+	</vbox>
+
+</dialog>

@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://asterisk-ext/skin/asterisk-ext.css" type="text/css"?>
+
+<!DOCTYPE prefwindow [ 
+<!ENTITY % asteriskextDTD SYSTEM "chrome://asterisk-ext/locale/asterisk-ext.dtd"> 
+%asteriskextDTD; 
+]> 
+
+<prefwindow id="AsteriskExtPreferences"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	onload="options_onload(event)" onunload="options_unload(event)" >
+
+	<script type="application/x-javascript" src="chrome://asterisk-ext/content/options.js" />
+<!--
+	<prefpane id="paneGeneral" label="&pref.general;">
+		<preferences>
+			<preference id="asterisk-ext-parsedocument" name="extensions.asterisk.parsedocument" type="bool"/>
+		</preferences>
+
+		<groupbox align="start">      
+			<hbox>
+				<checkbox id="parsedocumentCheckbox" preference="asterisk-ext-parsedocument" 
+					label="&pref.parse;" tooltiptext="&pref.parseLong;" disabled="true" />  
+			</hbox>
+
+		</groupbox>
+	</prefpane>
+-->
+	<prefpane id="paneConnection" label="&pref.connection;">
+		<preferences>
+			<preference id="asterisk-ext-manager" name="extensions.asterisk.manager" type="bool"/>
+			<preference id="asterisk-ext-autoconnect" name="extensions.asterisk.autoconnect" type="bool"/>
+			<preference id="asterisk-ext-host" name="extensions.asterisk.host" type="string"/>
+			<preference id="asterisk-ext-port" name="extensions.asterisk.port" type="string"/>
+			<preference id="asterisk-ext-username" name="extensions.asterisk.username" type="string"/>
+			<preference id="asterisk-ext-context" name="extensions.asterisk.context" type="string"/>
+			<preference id="asterisk-ext-channel" name="extensions.asterisk.channel" type="string"/>
+			<preference id="asterisk-ext-extension" name="extensions.asterisk.extension" type="string"/>
+		</preferences>
+
+		<grid>
+			<columns>
+				<column/>
+				<column/>
+			</columns>
+			<rows>
+				<row>
+					<separator class="thin"/>
+				</row>
+				<row align="center">
+					<hbox align="center" pack="end">
+						<label value="&pref.manager;" tooltiptext="&pref.managerLong;" />
+					</hbox>
+					<checkbox id="managerCheckbox" preference="asterisk-ext-manager" />  
+				</row>
+				<row align="center">
+					<hbox align="center" pack="end">
+						<label value="&pref.autoconnect;" />
+					</hbox>
+					<checkbox id="autoconnectCheckbox" preference="asterisk-ext-autoconnect" />  
+				</row>
+				<row align="center">
+					<hbox align="center" pack="end">
+						<label value="&pref.host;"/>
+					</hbox>
+					<textbox preference="asterisk-ext-host" size="12" />  
+				</row>
+				<row align="center">
+					<hbox align="center" pack="end">
+						<label value="&pref.port;"/>
+					</hbox>
+					<textbox preference="asterisk-ext-port" size="12"/>
+				</row>
+				<row align="center">
+					<hbox align="center" pack="end">
+						<label value="&pref.user;"/>
+					</hbox>
+					<textbox preference="asterisk-ext-username" size="12"/>
+				</row>
+				<row align="center">
+					<hbox align="center" pack="end">
+						<label value="&pref.passwd;"/>
+					</hbox>
+					<textbox id="asterisk-ext-password" type="password" size="12" /> 
+				</row>
+				<row align="center">
+					<hbox align="center" pack="end">
+						<label value="&pref.context;"/>
+					</hbox>
+					<textbox preference="asterisk-ext-context" size="12"/>
+				</row>
+				<row align="center">
+					<hbox align="center" pack="end">
+						<label value="&pref.channel;"/>
+					</hbox>
+					<hbox>
+						<menulist label="Channel" id="asterisk-ext-channeltypes" preference="asterisk-ext-channel" size="6" >
+							<menupopup />
+						</menulist>
+						<textbox preference="asterisk-ext-extension" size="6"/>
+					</hbox>
+				</row>
+
+			</rows>
+		</grid>
+		
+	</prefpane>
+	
+	<prefpane id="paneCall" label="&pref.call;">
+		<preferences>
+			<preference id="asterisk-ext-prefix" name="extensions.asterisk.prefix" type="string"/>
+			<preference id="asterisk-ext-countrycode" name="extensions.asterisk.countrycode" type="string"/>
+			<preference id="asterisk-ext-nationalprefix" name="extensions.asterisk.nationalprefix" type="string"/>
+			<preference id="asterisk-ext-internationalprefix" name="extensions.asterisk.internationalprefix" type="string"/>
+		</preferences>
+		
+		<grid align="center">
+			<columns>
+				<column/>
+				<column/>
+			</columns>
+			<rows>
+				<row>
+					<separator class="thin"/>
+				</row>
+				<row align="center">
+					<hbox align="center" pack="end">
+						<label value="&pref.prefix;" tooltiptext="&pref.prefixLong;"/>
+					</hbox>
+					<textbox size="4" preference="asterisk-ext-prefix" tooltiptext="&pref.prefixLong;"/>  
+				</row>
+				<row align="center">
+					<hbox align="center" pack="end">
+						<label value="&pref.countrycode;" tooltiptext="&pref.countrycodeLong;"/>
+					</hbox>
+					<textbox size="4" preference="asterisk-ext-countrycode" tooltiptext="&pref.countrycodeLong;"/>  
+				</row>
+				<row align="center">
+					<hbox align="center" pack="end">
+						<label value="&pref.nationalprefix;" tooltiptext="&pref.nationalprefixLong;"/>
+					</hbox>
+					<textbox size="4" preference="asterisk-ext-nationalprefix" tooltiptext="&pref.nationalprefixLong;"/>  
+				</row>
+				<row align="center">
+					<hbox align="center" pack="end">
+						<label value="&pref.internationalprefix;" tooltiptext="&pref.internationalprefixLong;"/>
+					</hbox>
+					<textbox size="4" preference="asterisk-ext-internationalprefix" tooltiptext="&pref.internationalprefixLong;"/>  
+				</row>
+			</rows>
+		</grid>
+	</prefpane>
+
+	<prefpane id="paneDisplay" label="&pref.display;">
+		<preferences>
+			<preference id="asterisk-ext-statusicon" name="extensions.asterisk.statusicon" type="bool"/>
+			<preference id="asterisk-ext-statustextbox" name="extensions.asterisk.statustextbox" type="bool"/>
+			<preference id="asterisk-ext-showcallpopup" name="extensions.asterisk.callpopup" type="bool"/>
+			<preference id="asterisk-ext-callpopuptimeout" name="extensions.asterisk.callpopup-timeout" type="int"/>
+			<preference id="asterisk-ext-callpopupurl" name="extensions.asterisk.callpopup-url" type="string"/>
+			<preference id="asterisk-ext-autoopenurl" name="extensions.asterisk.callpopup-autoopenurl" type="bool"/>
+			<preference id="asterisk-ext-historylimit" name="extensions.asterisk.history-limit" type="int"/>
+		</preferences>
+		<groupbox align="start">
+			<hbox>
+				<checkbox id="statusIconCheckbox" preference="asterisk-ext-statusicon"
+					label="&pref.statusicon;" />
+			</hbox>
+			<hbox>
+				<checkbox id="statusTextboxCheckbox" preference="asterisk-ext-statustextbox"
+					label="&pref.statustextbox;" />
+			</hbox>
+			<hbox>
+				<checkbox id="showPopupCheckbox" preference="asterisk-ext-showcallpopup"
+					label="&pref.showcallpopup;" />
+			</hbox>
+			<hbox align="center">
+				<label value="&pref.callpopuptimeout;" tooltiptext="&pref.callpopuptimeoutLong;"/>
+				<textbox  id="callPopupTimeoutTextbox" size="4" preference="asterisk-ext-callpopuptimeout"
+					tooltiptext="&pref.callpopuptimeoutLong;"/>
+			</hbox>
+			<hbox align="center">
+				<button id="callPopupTestButton" label="&pref.testbutton;" oncommand="testPopup();" />
+				<label value="&pref.testbuttonlabel;" />
+			</hbox>
+			<hbox align="center">
+				<label value="&pref.callpopupurl;" tooltiptext="&pref.callpopupurlLong;"/>
+			</hbox>
+			<hbox align="center">
+				<textbox id="callPopupURLTextbox" size="40" preference="asterisk-ext-callpopupurl" tooltiptext="&pref.callpopupurlLong;"/>
+			</hbox>
+			<hbox>
+				<checkbox id="autoOpenURLCheckbox" preference="asterisk-ext-autoopenurl"
+					label="&pref.autoOpenURL;" tooltip="&pref.autoOpenURLLong;" />
+			</hbox>
+			<hbox align="center">
+				<label value="&pref.historylimit;" tooltiptext="&pref.historylimitLong;"/>
+				<textbox  id="historyLimitTextbox" size="4" preference="asterisk-ext-historylimit"
+					tooltiptext="&pref.historylimitLong;"/>
+			</hbox>
+
+		</groupbox>
+	</prefpane>
+
+</prefwindow>

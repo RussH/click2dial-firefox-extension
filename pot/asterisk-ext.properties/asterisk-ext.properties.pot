@@ -1,0 +1,62 @@
+#. extracted from chrome/locale/en-US/asterisk-ext.properties
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-02-21 15:43+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.7.0\n"
+"X-Accelerator-Marker: &\n"
+
+#: menu_call
+msgid "Call: "
+msgstr ""
+
+#: menu_editcall
+msgid "Edit&Call: "
+msgstr ""
+
+#: version.label
+msgid "Version %S"
+msgstr ""
+
+#: popup.incomming_call
+msgid "Incomming Call"
+msgstr ""
+
+#: popup.outgoing_call
+msgid "Outgoing Call"
+msgstr ""
+
+#: popup.from
+msgid "From:"
+msgstr ""
+
+#: popup.to
+msgid "To:"
+msgstr ""
+
+#: popup.ringing
+msgid "Ringing"
+msgstr ""
+
+#: popup.answered
+msgid "Answered Call"
+msgstr ""
+
+#: popup.hangedup
+msgid "Hanged Up Call"
+msgstr ""
+
+#: popup.duration
+msgid "Duration: %S sec"
+msgstr ""
+
+#: popup.hangup
+msgid "Hangup"
+msgstr ""

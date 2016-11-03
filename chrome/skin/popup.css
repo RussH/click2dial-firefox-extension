@@ -1,0 +1,8 @@
+
+#alertCloseImage {
+	list-style-image: url("chrome://global/skin/icons/windowControls.png");
+	-moz-image-region: rect(0px, 48px, 16px, 32px);
+	margin: 2px;
+}
+
+

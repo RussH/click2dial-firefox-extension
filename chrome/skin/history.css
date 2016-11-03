@@ -1,0 +1,29 @@
+#mainBox {
+	width: 400px;
+	height: 400px;
+}
+
+.incomming .answered {
+	list-style-image: url("chrome://asterisk-ext/skin/call-incomming.png");
+	width: 32px;
+	height: 32px;
+}
+
+.outgoing .answered {
+	list-style-image: url("chrome://asterisk-ext/skin/call-outgoing.png"); 
+	width: 32px;
+	height: 32px;
+}
+
+.incomming .notanswered {
+	list-style-image: url("chrome://asterisk-ext/skin/call-incomming-failed.png");
+	width: 32px;
+	height: 32px;
+}
+
+.outgoing .notanswered {
+	list-style-image: url("chrome://asterisk-ext/skin/call-outgoing-failed.png"); 
+	width: 32px;
+	height: 32px;
+}
+

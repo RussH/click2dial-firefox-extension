@@ -1,0 +1,6 @@
+*.BASE
+*.THIS
+*.OTHER
+*.~1~
+*.xcf
+*.svg

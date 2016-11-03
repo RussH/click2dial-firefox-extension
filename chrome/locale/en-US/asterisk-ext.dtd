@@ -1,0 +1,78 @@
+<!-- preference window -->
+
+<!ENTITY pref.general		"General">
+<!ENTITY pref.connection	"Connection">
+<!ENTITY pref.call			"Call">
+<!ENTITY pref.display		"Display">
+
+<!ENTITY pref.parseTitle	"Parse">
+
+<!ENTITY pref.parse 		"Parse Document, requires Firefox restart">
+<!ENTITY pref.parseLong		"may slow down on large docs, requires restart">
+<!ENTITY pref.manager		"Use AMI (instead of AJAM)">
+<!ENTITY pref.managerLong	"AMI allows a permanent connection to Asterisk, it permits to display popup for each call received">
+<!ENTITY pref.autoconnect	"Auto-Connect at startup">
+<!ENTITY pref.prefix		"Call Prefix">
+<!ENTITY pref.prefixLong	"Prefix added to all dialed number">
+
+<!ENTITY pref.countrycode				"Country Code">
+<!ENTITY pref.countrycodeLong			"Local country code for automatic detection">
+<!ENTITY pref.nationalprefix			"National Prefix">
+<!ENTITY pref.nationalprefixLong		"National Prefix for phone number cleaning">
+<!ENTITY pref.internationalprefix		"International Prefix">
+<!ENTITY pref.internationalprefixLong	"International Prefix for phone number cleaning">
+
+<!ENTITY pref.statusicon			"Display the statusbar icon">
+<!ENTITY pref.statustextbox			"Display the statusbar textbox">
+<!ENTITY pref.showcallpopup			"Open popup on incomming call">
+<!ENTITY pref.callpopuptimeout		"Timeout before closing popup">
+<!ENTITY pref.callpopuptimeoutLong	"Put 0 to disable the timeout">
+<!ENTITY pref.callpopupurl			"URL (by default click on the popup to open)">
+<!ENTITY pref.callpopupurlLong		"URL to open on a click, #NUM# will be replaced by the callerid number">
+<!ENTITY pref.autoOpenURL			"Auto-open the URL">
+<!ENTITY pref.autoOpenURLLong		"Check this box to auto-open the URL on an incomming call. By default you will have to click the popup">
+<!ENTITY pref.testbutton			"Test Popup">
+<!ENTITY pref.testbuttonlabel		"must be connected to test">
+<!ENTITY pref.historylimit			"Calls History Max Size">
+<!ENTITY pref.historylimitLong		"max number of entries to display in the Calls History window">
+
+<!ENTITY pref.host			"Host">
+<!ENTITY pref.port			"Port">
+<!ENTITY pref.user			"User">
+<!ENTITY pref.passwd		"Password">
+<!ENTITY pref.context		"Context">
+<!ENTITY pref.channel		"Channel">
+
+<!ENTITY pref.futureuse		"For future use">
+
+<!-- Context Menu -->
+
+<!ENTITY menu.call			"Call: ">
+<!ENTITY menu.editcall		"Edit&amp;Call: ">
+<!ENTITY menu.callKey		"c">
+<!ENTITY menu.editcallKey	"e">
+
+<!ENTITY menu.connect			"Connect">
+<!ENTITY menu.disconnect	"Disconnect">
+<!ENTITY menu.about				"About">
+<!ENTITY menu.options			"Options">
+<!ENTITY menu.optionsLong	"Open options window">
+<!ENTITY menu.history			"Calls History">
+<!ENTITY menu.historyLong	"Open call history window">
+
+<!-- Status Bar -->
+
+<!ENTITY status.text		"Number">
+
+<!-- Popup Window -->
+
+<!ENTITY popup.hangup		"Hangup">
+<!ENTITY popup.transfer		"Transfer">
+<!ENTITY popup.reject		"Reject">
+
+<!-- About Dialog -->
+
+<!ENTITY about.description	"Asterisk Click2Dial Extension">
+<!ENTITY about.acipia		"by Jonathan SEMCZYK (Acipia)">
+
+

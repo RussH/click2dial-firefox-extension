@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://asterisk-ext/skin/asterisk-ext.css" type="text/css"?>
+
+<!DOCTYPE prefwindow [ 
+<!ENTITY % asteriskextDTD SYSTEM "chrome://asterisk-ext/locale/asterisk-ext.dtd"> 
+%asteriskextDTD; 
+]>
+
+<overlay id="asteriskExt-Overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+	<script type="application/x-javascript" src="chrome://asterisk-ext/content/overlayMain.js" />
+
+ 	<stringbundleset id="stringbundleset"> 
+		<stringbundle id="asterisk-ext-strings" src="chrome://asterisk-ext/locale/asterisk-ext.properties" />
+	</stringbundleset>
+
+	<toolbarpalette id="BrowserToolbarPalette">
+		<toolbarbutton id="asterisk-ext-toolbar-icon" />
+		<toolbaritem id="asterisk-ext-toolbar-textbox" />
+	</toolbarpalette>
+
+
+<!-- Firefox context menu -->
+	<popup id="contentAreaContextMenu">
+		<menuitem image="chrome://asterisk-ext/skin/logo-20.png" 
+			class="menuitem-iconic" id="context-asterisk" label="&menu.call;"
+			accesskey="&menu.callKey;" oncommand="AsteriskExtChrome.BrowserOverlay.dial(this.value);"
+			position="1" hidden="true" />
+		<menuitem image="chrome://asterisk-ext/skin/logo-20.png" 
+			class="menuitem-iconic" id="context-asterisk-edit" label="&menu.editcall;"
+			accesskey="&menu.editcallKey;" oncommand="AsteriskExtChrome.BrowserOverlay.editConfirmDial(this.value);"
+			position="2" hidden="true" />
+	</popup>
+
+<!-- Thunderbird context menu -->
+	<popup id="mailContext">
+		<menuitem image="chrome://asterisk-ext/skin/logo-20.png" 
+			class="menuitem-iconic" id="context-asterisk" label="&menu.call;"
+			accesskey="&menu.callKey;" oncommand="AsteriskExtChrome.BrowserOverlay.dial(this.value);"
+			position="1" hidden="true" />
+		<menuitem image="chrome://asterisk-ext/skin/logo-20.png" 
+			class="menuitem-iconic" id="context-asterisk-edit" label="&menu.editcall;"
+			accesskey="&menu.editcallKey;" oncommand="AsteriskExtChrome.BrowserOverlay.editConfirmDial(this.value);"
+			position="2" hidden="true" />
+	</popup>
+
+	<popupset id="mainPopupSet">
+		<menupopup id="asterisk-ext-popup" onpopupshowing="AsteriskExtChrome.BrowserOverlay.onStatusBarContextMenu(event);">
+			<menuitem image="chrome://asterisk-ext/skin/logo-20.png" 
+				class="menuitem-iconic" id="asterisk-ext-call-menuitem" label="&menu.call;"
+				oncommand="AsteriskExtChrome.BrowserOverlay.dial(this.value);"
+				hidden="true" />
+			<menuitem id="asterisk-ext-connect-menuitem"
+				label="&menu.connect;" oncommand="AsteriskExtChrome.BrowserOverlay.connectManager();" />
+			<menuitem id="asterisk-ext-disconnect-menuitem"
+				label="&menu.disconnect;" oncommand="AsteriskExtChrome.BrowserOverlay.disconnectManager();" />
+			<menuitem id="asterisk-ext-history-menuitem"
+				label="&menu.history;"
+				oncommand="AsteriskExtChrome.BrowserOverlay.openHistoryWindow();"
+				tooltiptext="&menu.historyLong;" />
+			<menuitem id="asterisk-ext-options-menuitem"
+				label="&menu.options;"
+				oncommand="AsteriskExtChrome.BrowserOverlay.openOptionsWindow();"
+				tooltiptext="&menu.optionsLong;" />
+			<menuitem id="asterisk-ext-about-menuitem"
+				label="&menu.about;"
+				oncommand="AsteriskExtChrome.BrowserOverlay.openAboutWindow();" />
+		</menupopup>
+	</popupset>
+	
+	<statusbar id="status-bar">
+		<statusbarpanel id="asterisk-ext-statusbarpanel" >
+			<image id="asterisk-ext-status-icon" tooltiptext="Asterisk Click2Dial" 
+				onmousedown="AsteriskExtChrome.BrowserOverlay.onStatusButtonMouseDown();" hidden="false" />
+			<textbox id="asterisk-ext-status-textbox" type="autocomplete" autocompletesearch="phonenumber-autocomplete" 
+				showcommentcolumn="true" empty="true" emptytext="&status.text;"
+				size="12" hidden="false" onkeydown="if(event.keyCode == KeyEvent.DOM_VK_RETURN) { AsteriskExtChrome.BrowserOverlay.statusDial(); }"/>
+		</statusbarpanel>
+	</statusbar>
+
+<!-- button details -->
+	<toolbarbutton id="asterisk-ext-toolbar-icon"	label="Asterisk" tooltiptext="asterisk tooltip"
+		oncommand="AsteriskExtChrome.BrowserOverlay.onToolbarButtonMouseDown();"
+		class="chromeclass-toolbar-additional" />
+	<toolbaritem id="asterisk-ext-toolbar-textbox" class="chromeclass-toolbar-additional">
+			<textbox id="asterisk-ext-toolbar-textbox-item" type="autocomplete" autocompletesearch="phonenumber-autocomplete"
+				showcommentcolumn="true" completedefaultindex="true" timeout="500"
+				empty="true" emptytext="&status.text;" src="chrome://asterisk-ext/skin/logo-16.png"
+				size="12" hidden="false" onkeydown="if(event.keyCode == KeyEvent.DOM_VK_RETURN) { AsteriskExtChrome.BrowserOverlay.toolbarDial(); }" />
+				
+	</toolbaritem>
+
+</overlay>

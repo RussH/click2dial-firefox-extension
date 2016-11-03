@@ -1,0 +1,243 @@
+#. extracted from chrome/locale/en-US/asterisk-ext.dtd
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-02-21 15:43+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.7.0\n"
+"X-Accelerator-Marker: &\n"
+
+#. preference window
+#: pref.general
+msgid "General"
+msgstr ""
+
+#: pref.connection
+msgid "Connection"
+msgstr ""
+
+#: pref.call
+msgid "Call"
+msgstr ""
+
+#: pref.display
+msgid "Display"
+msgstr ""
+
+#: pref.parseTitle
+msgid "Parse"
+msgstr ""
+
+#: pref.parse
+msgid "Parse Document, requires Firefox restart"
+msgstr ""
+
+#: pref.parseLong
+msgid "may slow down on large docs, requires restart"
+msgstr ""
+
+#: pref.manager
+msgid "Use AMI (instead of AJAM)"
+msgstr ""
+
+#: pref.managerLong
+msgid ""
+"AMI allows a permanent connection to Asterisk, it permits to display popup "
+"for each call received"
+msgstr ""
+
+#: pref.autoconnect
+msgid "Auto-Connect at startup"
+msgstr ""
+
+#: pref.prefix
+msgid "Call Prefix"
+msgstr ""
+
+#: pref.prefixLong
+msgid "Prefix added to all dialed number"
+msgstr ""
+
+#: pref.countrycode
+msgid "Country Code"
+msgstr ""
+
+#: pref.countrycodeLong
+msgid "Local country code for automatic detection"
+msgstr ""
+
+#: pref.nationalprefix
+msgid "National Prefix"
+msgstr ""
+
+#: pref.nationalprefixLong
+msgid "National Prefix for phone number cleaning"
+msgstr ""
+
+#: pref.internationalprefix
+msgid "International Prefix"
+msgstr ""
+
+#: pref.internationalprefixLong
+msgid "International Prefix for phone number cleaning"
+msgstr ""
+
+#: pref.statusicon
+msgid "Display the statusbar icon"
+msgstr ""
+
+#: pref.statustextbox
+msgid "Display the statusbar textbox"
+msgstr ""
+
+#: pref.showcallpopup
+msgid "Open popup on incomming call"
+msgstr ""
+
+#: pref.callpopuptimeout
+msgid "Timeout before closing popup"
+msgstr ""
+
+#: pref.callpopuptimeoutLong
+msgid "Put 0 to disable the timeout"
+msgstr ""
+
+#: pref.callpopupurl
+msgid "URL (by default click on the popup to open)"
+msgstr ""
+
+#: pref.callpopupurlLong
+msgid "URL to open on a click, #NUM# will be replaced by the callerid number"
+msgstr ""
+
+#: pref.autoOpenURL
+msgid "Auto-open the URL"
+msgstr ""
+
+#: pref.autoOpenURLLong
+msgid ""
+"Check this box to auto-open the URL on an incomming call. By default you "
+"will have to click the popup"
+msgstr ""
+
+#: pref.testbutton
+msgid "Test Popup"
+msgstr ""
+
+#: pref.testbuttonlabel
+msgid "must be connected to test"
+msgstr ""
+
+#: pref.historylimit
+msgid "Calls History Max Size"
+msgstr ""
+
+#: pref.historylimitLong
+msgid "max number of entries to display in the Calls History window"
+msgstr ""
+
+#: pref.host
+msgid "Host"
+msgstr ""
+
+#: pref.port
+msgid "Port"
+msgstr ""
+
+#: pref.user
+msgid "User"
+msgstr ""
+
+#: pref.passwd
+msgid "Password"
+msgstr ""
+
+#: pref.context
+msgid "Context"
+msgstr ""
+
+#: pref.channel
+msgid "Channel"
+msgstr ""
+
+#: pref.futureuse
+msgid "For future use"
+msgstr ""
+
+#. Context Menu
+#: menu.call
+msgid "Call: "
+msgstr ""
+
+#: menu.editcall
+msgid "Edit&amp;Call: "
+msgstr ""
+
+#: menu.callKey
+msgid "c"
+msgstr ""
+
+#: menu.editcallKey
+msgid "e"
+msgstr ""
+
+#: menu.connect
+msgid "Connect"
+msgstr ""
+
+#: menu.disconnect
+msgid "Disconnect"
+msgstr ""
+
+#: menu.about
+msgid "About"
+msgstr ""
+
+#: menu.options
+msgid "Options"
+msgstr ""
+
+#: menu.optionsLong
+msgid "Open options window"
+msgstr ""
+
+#: menu.history
+msgid "Calls History"
+msgstr ""
+
+#: menu.historyLong
+msgid "Open call history window"
+msgstr ""
+
+#. Status Bar
+#: status.text
+msgid "Number"
+msgstr ""
+
+#. Popup Window
+#: popup.hangup
+msgid "Hangup"
+msgstr ""
+
+#: popup.transfer
+msgid "Transfer"
+msgstr ""
+
+#: popup.reject
+msgid "Reject"
+msgstr ""
+
+#. About Dialog
+#: about.description
+msgid "Asterisk Click2Dial Extension"
+msgstr ""
+
+#: about.acipia
+msgid "by Jonathan SEMCZYK (Acipia)"
+msgstr ""

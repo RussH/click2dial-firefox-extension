@@ -1,0 +1,11 @@
+content asterisk-ext jar:chrome/asterisk-ext.jar!/content/asterisk-ext/
+
+skin asterisk-ext classic/1.0 jar:chrome/asterisk-ext.jar!/skin/classic/asterisk-ext/
+style chrome://global/content/customizeToolbar.xul chrome://asterisk-ext/skin/asterisk-ext.css
+
+resource asterisk-ext modules/
+
+overlay chrome://browser/content/browser.xul chrome://asterisk-ext/content/overlayMain.xul
+overlay chrome://messenger/content/mailWindowOverlay.xul chrome://asterisk-ext/content/overlayMain.xul
+overlay chrome://messenger/content/addressbook/addressbook.xul chrome://asterisk-ext/content/overlayTBAddressBook.xul
+
